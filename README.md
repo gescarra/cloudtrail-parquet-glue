@@ -16,11 +16,11 @@
 module "cloudtrail_parquet_glue" {
   source  = "github.com/alsmola/cloudtrail_parquet_glue"
   region = "us-east-1"
-  aws_account_id  "1234567890"
+  aws_account_id = "1234567890"
   cloudtrail_s3_bucket = "s3://my-cloudtrail-bucket"
   etl_script_s3_bucket = "s3://my-etl-script-bucket"
   parquet_s3_bucket = "s3://my-parquet-bucket"
-  temp_s3_bucket = = "s3://my-temp-bucket"
+  temp_s3_bucket = "s3://my-temp-bucket"
   glue_database = "cloudtrail"
 }
 ```
